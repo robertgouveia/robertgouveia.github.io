@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>Redirecting…</title>
+<script>
+  // Forward the bank's ?code=...&state=... straight to the local API. Nothing is stored here.
+  location.replace("http://localhost:8000/callback" + location.search);
+</script>
+</head>
+<body style="font-family: system-ui, sans-serif">
+<p>Redirecting to your local app… If nothing happens, make sure it is running on <code>localhost:8000</code>.</p>
+</body>
+</html>
